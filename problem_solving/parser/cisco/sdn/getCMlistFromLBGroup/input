@@ -1,0 +1,49 @@
+st for docis group 1 show cable load-balance docsis-group  1 modem-list
+Codes: M - Multicast, U - UGS, P - PCMM, F - Max-Failures, X - eXcluded
+       L - L2vpn, R - RSVP 
+Primary DS     MAC Address        RCC-ID Bad Rfid Priority MUPFXLR
+In9/0/0:4
+In9/0/0:4/UB   (16)
+               c8fb.26a6.c72e     1               0        -------
+               c8fb.26a6.c432     1               0        -------
+               c8fb.26a6.bff4     1               0        -------
+               c8fb.26a6.bf9e     1               0        -------
+               c8fb.26a6.c696     1               0        -------
+               c8fb.26a6.c53a     1               0        -------
+               c8fb.26a6.c0c2     1               0        -------
+               c8fb.26a6.c088     1               0        -------
+               c8fb.26a6.bece     1               0        -------
+               c8fb.26a6.bf90     1               0        -------
+               c8fb.26a6.c486     1               0        -------
+               c8fb.26a6.c66e     1               0        -------
+               c8fb.26a6.c122     1               0        -------
+               c8fb.26a6.c608     1               0        -------
+               c8fb.26a6.c3e0     1               0        -------
+               c8fb.26a6.bffe     1               0        -------
+Us9/0/2:0      (0)
+Us9/0/2:1      (0)
+Us9/0/2:2      (0)
+Us9/0/2:3      (0)
+In9/0/0:12
+In9/0/0:12/UB  (4)
+               c8fb.26a6.c56c     3               0        -------
+               c8fb.26a6.c62c     3               0        -------
+               c8fb.26a6.c4d2     2               0        -------
+               c8fb.26a6.c42e     3               0        -------
+Us9/0/2:0      (0)
+Us9/0/2:1      (0)
+Us9/0/2:2      (0)
+Us9/0/2:3      (0)
+In9/0/0:20
+In9/0/0:20/UB  (3)
+               c8fb.26a6.c02c     4               0        -------
+               c8fb.26a6.c562     4               0        -------
+               c8fb.26a6.c0dc     4               0        -------
+Us9/0/2:0      (0)
+Us9/0/2:1      (0)
+Us9/0/2:2      (0)
+Us9/0/2:3      (0)
+
+G04#
+
+
