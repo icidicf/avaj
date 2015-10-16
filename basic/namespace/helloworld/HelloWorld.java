@@ -1,4 +1,4 @@
-package namespace;
+package helloworld;
 import java.util.*;
 
 public class HelloWorld{

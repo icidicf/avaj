@@ -3,4 +3,4 @@
 
 javac HelloWorld.java
 
-java -cp ../  namespace/HelloWorld
+java -cp ../  helloworld/HelloWorld
