@@ -1,0 +1,58 @@
+1,
+在apache-tomcat-7.0.67/bin 下面添加tomcat7的文件路径
+CATALINA_HOME="/git/java/web/tomcat7DeployWithMaven/apache-tomcat-7.0.67"
+2,
+enable manager port under  %MAVEN_PATH%/conf/tomcat-users.xml
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<user username="cable" password="cable" roles="manager-gui,manager-script" />
+
+3,
+change port in 
+apache-tomcat-7.0.67/conf/server.xml 
+
+
+4,
+以sudo 在bin下启动tomcat ./startup.sh 
+apache-tomcat-7.0.67/bin
+
+
+
+
+
+under sdn-web
+1,
+copy settings.xml to ~/.m2/settings.xml
+2, 
+add tomcat7 plugin 
+
+
+<plugin>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+            <url>http://localhost:8089/manager/text</url>
+            <server>sdn4159</server>
+            <path>/cmts</path>
+        </configuration>
+</plugin>
+
+3 ,
+link target file under ./sdn-web/src/main/webapp 
+
+4, 
+使用 以下命令deploy 
+mvn tomcat7:deploy 
+mvn tomcat7:undeploy 
+mvn tomcat7:redeploy 
+当deploy 命令出总是时可以使用redeploy 命令
+
+
+以上是tomcat 7与工程文件相互配合的结果
+
+可以通过登陆localhost:8080/manager 开验证manager 端口是否已正确配置
+
+
+
+
